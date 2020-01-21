@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Controller">
+   <children>
+      <Canvas fx:id="Canvas" height="650.0" layoutX="30.0" layoutY="51.0" width="900.0" />
+      <Label layoutX="565.0" layoutY="16.0" prefHeight="35.0" prefWidth="98.0" text="POINTS: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Points" layoutX="646.0" layoutY="16.0" prefHeight="35.0" prefWidth="116.0" text="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Reset" layoutX="438.0" layoutY="21.0" mnemonicParsing="false" onAction="#ResetButtonAction" prefHeight="25.0" prefWidth="105.0" text="Reset" />
+      <Slider fx:id="speedSlider" layoutX="286.0" layoutY="27.0" onMouseReleased="#SliderAction" />
+      <Label layoutX="327.0" layoutY="1.0" text="SPEED">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
